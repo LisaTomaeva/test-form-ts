@@ -41,17 +41,21 @@ export const mainFormSchema: RJSFSchema = {
                 secondName: { type: "string" },
                 grandFather: {
                   type: "object",
-                  // name: { type: "string" },
-                  // age: { type: "integer" },
-                  // secondName: { type: "string" },
-                  // retired: { type: "boolean" }
+                  properties: {
+                    name: { type: "string" },
+                    age: { type: "integer" },
+                    secondName: { type: "string" },
+                    retired: { type: "boolean" }
+                  }
                 },
                 grandMother: {
                   type: "object",
-                  // name: { type: "string" },
-                  // age: { type: "integer" },
-                  // secondName: { type: "string" },
-                  // retired: { type: "boolean" }
+                  properties: {
+                    name: { type: "string" },
+                    age: { type: "integer" },
+                    secondName: { type: "string" },
+                    retired: { type: "boolean" }
+                  }
                 }
               }
             }

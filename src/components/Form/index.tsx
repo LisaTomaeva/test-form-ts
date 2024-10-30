@@ -1,8 +1,9 @@
 import React from 'react';
-import Form from '@rjsf/core';
-import { RJSFSchema } from '@rjsf/utils';
 import validator from '@rjsf/validator-ajv8';
+
+import { RJSFSchema } from '@rjsf/utils';
 import { mainFormSchema } from '../../shemas/MainForm';
+import { StyledForm } from './styles';
 
 const schema: RJSFSchema = {
     title: 'Todo',
@@ -17,7 +18,7 @@ const schema: RJSFSchema = {
   const log = (type: any) => console.log.bind(console, type);
   
   const FormComponent = () => (
-    <Form
+    <StyledForm
       schema={mainFormSchema}
       validator={validator}
       onChange={log('changed')}
