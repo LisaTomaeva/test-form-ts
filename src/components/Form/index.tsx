@@ -4,7 +4,7 @@ import validator from '@rjsf/validator-ajv8';
 import { mainFormSchema } from '../../shemas/MainForm';
 import { StyledForm } from './styles';
   
-  const log = (type: any) => console.log.bind(console, type);
+  const log = (type: string) => console.log.bind(console, type);
 
   const handleOnError = () => {
     log('errors');
