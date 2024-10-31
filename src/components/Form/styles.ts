@@ -6,4 +6,5 @@ const Form = withTheme(Theme);
 
 export const StyledForm = styled(Form)`
     width: 600px;
+    margin: 25px;
 }`;
